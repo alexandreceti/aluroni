@@ -1,18 +1,24 @@
 import style from './Ordenador.module.scss'
-import opcoes from './opcoes.json'
+import opcoesJson from './opcoes.json'
 import classNames from 'classnames'
 import React, { useState } from 'react'
 import { MdKeyboardArrowUp, MdKeyboardArrowDown } from 'react-icons/md'
-import { OperationCanceledException } from 'typescript'
+
+export type OpcaoOrdenador = '' | 'porcao' | 'qtd_pessoas' | 'preco'
 
 interface Props {
-  ordenador: string,
-  setOrdenador: React.Dispatch<React.SetStateAction<string>>
+  ordenador: OpcaoOrdenador,
+  setOrdenador: React.Dispatch<React.SetStateAction<OpcaoOrdenador>>
 }
 
+interface IOpcao {
+  nome: string
+  value: OpcaoOrdenador,
+}
 
 export default function Ordenador({ ordenador, setOrdenador }: Props) {
   const [aberto, setAberto] = useState(false);
+  const opcoes = opcoesJson as IOpcao[]
 
   const nomeOrdenador = ordenador && opcoes.find(opcao => opcao.value === ordenador)?.nome
 
@@ -31,7 +37,7 @@ export default function Ordenador({ ordenador, setOrdenador }: Props) {
         [style.ordenador__options]: true,
         [style["ordenador__options--ativo"]]: aberto,
       })}>
-        {opcoes.map(opcao => (
+        {opcoes.map((opcao) => (
           <div onClick={() => setOrdenador(opcao.value)}
             className={style.ordenador__option}
             key={opcao.value}
