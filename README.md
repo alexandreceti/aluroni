@@ -19,11 +19,7 @@ Neste curso pode intender conseitos de gerenciamento de estado na aplicação, e
 
 ## Tela
 
-![Aluroni](/img/aluroni.png")
-
-<p align="center">
-      <img src="img/aluroni.png" alt="aluroni" width="100%" height="100%"/>
-<p>
+![Aluroni](/img/aluroni.png)
 
 ## Executando a aplicação
 
