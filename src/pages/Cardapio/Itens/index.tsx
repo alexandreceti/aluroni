@@ -1,9 +1,9 @@
-import cardapio from "./itens.json";
-import Item from "./Item";
-import styles from './Itens.module.scss'
-import Ordenador from "../Ordenador";
-import { useState } from "react";
-import { useEffect } from "react";
+import cardapio from '../../../data/cardapio.json';
+import Item from './Item';
+import styles from './Itens.module.scss';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import { Cardapio } from 'types/Prato';
 
 interface Props {
   busca: string,
@@ -13,7 +13,7 @@ interface Props {
 
 function Itens(props: Props) {
 
-  const [lista, setLista] = useState(cardapio)
+  const [lista, setLista] = useState(cardapio);
 
   const { busca, filtro, ordenador } = props;
 
@@ -24,24 +24,24 @@ function Itens(props: Props) {
 
   function testaFiltro(id: number) {
     if (filtro !== null) return filtro === id;
-    return true
+    return true;
   }
 
 
   const ordenarPropriedadeCrecente = (
-    lista: typeof cardapio,
+    lista: Cardapio,
     campo: 'size' | 'serving' | 'price') => {
-    return lista.sort((a, b) => (a[campo] > b[campo] ? 1 : -1))
-  }
+    return lista.sort((a, b) => (a[campo] > b[campo] ? 1 : -1));
+  };
 
-  function ordenar(novaLista: typeof cardapio) {
+  function ordenar(novaLista: Cardapio) {
 
     switch (ordenador) {
-      case "porcao":
+      case 'porcao':
         return ordenarPropriedadeCrecente(novaLista, 'size');
-      case "qtd_pessoas":
+      case 'qtd_pessoas':
         return ordenarPropriedadeCrecente(novaLista, 'serving');
-      case "preco":
+      case 'preco':
         return ordenarPropriedadeCrecente(novaLista, 'price');
       default:
         return novaLista;
@@ -52,7 +52,7 @@ function Itens(props: Props) {
   useEffect(() => {
     const novaLista = cardapio.filter((item) => testaBusca(item.title) && testaFiltro(item.category.id));
     setLista(ordenar(novaLista));
-  }, [busca, filtro, ordenador])
+  }, [busca, filtro, ordenador]);
 
   return (
     <div className={styles.itens}>
@@ -63,7 +63,7 @@ function Itens(props: Props) {
         />
       ))}
     </div>
-  )
+  );
 }
 
 export default Itens;

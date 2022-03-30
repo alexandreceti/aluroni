@@ -1,14 +1,10 @@
+import { ReactComponent as Logo } from 'assets/logo.svg';
+import styles from './Footer.module.scss';
 
-import { ReactComponent as Logo } from 'assets/logo.svg'
-
-function Footer() {
+export default function Footer() {
   return (
-    <footer>
-      <h2>Aluroni</h2>
-      <p>O Melhor restaurante</p>
+    <footer className={styles.footer}>
       <Logo />
     </footer>
-  )
+  );
 }
-
-export default Footer

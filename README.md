@@ -1,46 +1,47 @@
-# Getting Started with Create React App
+# 📚 Aluroni
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicação [React](https://pt-br.reactjs.org/) criada na realização do curso [Alura](http://www.alura.com.br):
 
-## Available Scripts
+## [React: conhecendo a biblioteca React Router](https://www.alura.com.br/curso-online-react-biblioteca-react-router)
 
-In the project directory, you can run:
+- Saiba como refatorar um projeto utilizando ESLint
+- Desenvolva um código escalável, priorizando um código limpo e fácil de entender
+- Utilize o pacote react-router-dom de forma simples e prática, aprendendo todos os conceitos principais da biblioteca
+- Descubra como a biblioteca se integra com o navegador e utiliza de coisas nativas para mudar as rotas e compartilhar estados
+- Crie telas navegando entre elas de diversas formas diferentes e reaproveite componentes eles elas
+- Entenda sobre nested routes e como criá-las para reaproveitar código e resolver problemas
 
-### `npm start`
+Esta curso tem como objeivo de estudo o conceito de rotas em aplicações react.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Aprendizado
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Neste curso pode intender conseitos de gerenciamento de estado na aplicação, e tecnicas para melhor organizar os compontes, e lidar com com o problemas de prop drilling "vazamento de props".
 
-### `npm test`
+## Tela
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Aluroni](/img/aluroni.png")
 
-### `npm run build`
+<p align="center">
+      <img src="img/aluroni.png" alt="aluroni" width="100%" height="100%"/>
+<p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Executando a aplicação
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Aplicação criada com o [Create React App](https://github.com/facebook/create-react-app), sendo assim para executar, basta clonar o projeto.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```shell
+git clone https://github.com/alexandreceti/aluroni.git
+```
 
-### `npm run eject`
+Acessar a pasta do projeto e instalar dependencias do projeto:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```shell
+cd aluroni
+npm install
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Iniciar a aplicação:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```shell
+npm start
+```
