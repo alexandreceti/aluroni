@@ -15,7 +15,8 @@ Esta curso tem como objeivo de estudo o conceito de rotas em aplicações react.
 
 ## Aprendizado
 
-Neste curso pode intender conseitos de gerenciamento de estado na aplicação, e tecnicas para melhor organizar os compontes, e lidar com com o problemas de prop drilling "vazamento de props".
+Neste curso entendi os conceitos de rotas em uma aplicação SPA. e como podemos criar paginas, utilizando a lib react-router-dom.
+Trabalhando com componetes de navegação e Hooks da lib.
 
 ## Tela
 
