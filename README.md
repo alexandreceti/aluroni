@@ -15,8 +15,8 @@ Esta curso tem como objeivo de estudo o conceito de rotas em aplicações react.
 
 ## Aprendizado
 
-Neste curso entendi os conceitos de rotas em uma aplicação SPA. e como podemos criar paginas, utilizando a lib react-router-dom.
-Trabalhando com componetes de navegação e Hooks da lib.
+Neste curso entendi os conceitos de rotas em uma aplicação SPA. e como podemos criar páginas utilizando a lib react-router-dom.
+Trabalhando com componentes de navegação e Hooks da lib.
 
 ## Tela
 
@@ -30,14 +30,14 @@ Aplicação criada com o [Create React App](https://github.com/facebook/create-r
 git clone https://github.com/alexandreceti/aluroni.git
 ```
 
-Acessar a pasta do projeto e instalar dependencias do projeto:
+Acesse a pasta do projeto e instalar dependencias do projeto:
 
 ```shell
 cd aluroni
 npm install
 ```
 
-Iniciar a aplicação:
+Inicie a aplicação:
 
 ```shell
 npm start
